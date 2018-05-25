@@ -15,10 +15,10 @@ import HaskellSyntax
 import Language
 
 import HaskellSyntaxSpec
+import JavaScriptSyntaxSpec
 
 main :: IO ()
-main =
-  hspec haskellSyntaxSpecs
+main = hspec javaScriptSyntaxSpecs
 
 readFixture :: String -> IO String
 readFixture name = readFile ("test/fixtures/" ++ name ++ ".tree")
