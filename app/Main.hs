@@ -15,6 +15,7 @@ main = do
   case args of
     ["build", filename] -> build compile filename
     ["format", filename] -> build format filename
+    ["format-js", filename] -> build formatJS filename
     _ -> putStrLn "please provide a file to compile"
   where
     build f filename = do
